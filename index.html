@@ -1,39 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<style>
-    table {
-    border-collapse: collapse;
-    width: 100%; 
-    }
-    th, td {
-        border: 1px solid black;
-        padding: 8px;
-        text-align: center;
-    }
-</style>
+    <title>Menu de navegação</title>
+    <style>
+        * {
+            margin: 0;
+            /*Removendo as margens padrão*/
+            padding: 0;
+            /*Remevendo o preechimento padrão*/
+            box-sizing: border-box;
+            /*ajusta o padding e o margin do elemento para que todos os elementos internos sejam considerados como se estivessem dentro do elemento*/
+        }
+        
+        body{
+            text-align: center;
+        }
+        /*Estilizar o cabeçalho*/
+        header {
+            background-color: #333;
+            /*define a cor de fundo do cabeçalho*/
+            padding: 20px 0px;
+            /*Adciona espaçamento na parte superior e inferior do cabeçalho*/
+        }
+        
+        nav ul {
+           
+            display: flex;
+            /*define a exibição dos itens da lista para linha*/
+            list-style: none;
+            /*Remove os marcadores*/
+            justify-content: center;
+            /*Centralizar os itens do menu ao centro*/
+            margin: 15px;
+            /*define espaçamento entre linhas*/
+        }
+        
+        nav ul li a {
+            color: white;
+            /*cor da letra branca*/
+            text-decoration: none;
+            /*removendo o sublinhado*/
+            font-weight: bold;
+            /*define os textos do link em negrito*/
+            padding: 5px 10px;
+            transition: color 0.10s;
+        }
+        
+        nav ul li a:hover {
+            color: bisque;
+            /*Efeito ao passar o mouse*/
+        }
+       
+
+        section img {
+            padding: 60px 20px;
+            width: auto;
+            height: auto;
+            align-items: center;
+           
+        }
+        #Início{
+            background-color: rgb(236, 142, 219);
+            padding: 20px;
+        }
+        #Institucional{
+            background-color: rgb(230, 173, 208);
+            padding: 20px;
+           
+        }
+        
+        #ÁreasdeAtuação{
+            background-color: rgb(230, 148, 201);
+            padding: 20px;
+        }
+        
+        #Contato{
+            background-color: rgb(243, 160, 241);
+            padding: 20px;
+        }
+        
+        #TrabalheConosco{
+            background-color: rgb(232, 176, 211);
+            padding: 20px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Tabela</h1>
-    <table style="width: 100%;border-collapse: collapse;">
-        <tr>
-        <th style="boder": 1px solid rgb(245, 12, 12);">A</th>
-        <th>B</th>
-        <th>C</th>
-    </tr>
-    <tr>
-        <td>D</td>
-        <td>E</td>
-        <td>F</td>
-    </tr>
-    <tr>
-        <td>G</td>
-        <td>H</td>
-        <td>I</td>
-    </tr>
+    <div class="Menu-Navegacao">
+        <header><!--cabeçalho do menu de navegação -->
+            <nav><!--Indica que tudo que esta dentro dela faz parte da nevegação da pagina-->
+                <ul><!--Lista não ordenada-->
+                    <li><a href="#Inicio">Inicio</a></li><!--link para secão home-->
+                    <li><a href="#Institucional">Institucional</a></li><!--link para secão sobre-->
+                    <li><a href="#Áreas de Atuação">Áreas de Atuação</a></li> <!--link para secão contato-->
+                    <li><a href="#Contato">Contato</a></li>
+                    <li><a href="#TrabalheConosco">Trabalhe Conosco</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <section id="Inicio">
+        <h1>Bem-vindo à Home</h1>
+        <p>Seja bem-vindo a nossa empresa Belleza Serenza, onde nossa prioridade é você! </p>
+        <img src="https://media.gazetadopovo.com.br/2008/09/6f7bd1d17cccfcfbf10cefc467de4e3b-gpLarge.jpg" alt="">
+        
+    </section>
+
+    <section id="Institucional">
+        <h1>Sobre Nós</h1>
+        <p>A **Belleza Serenza** é uma marca que celebra a beleza feminina com sofisticação, elegância e bem-estar. Combinando tradição e inovação, criamos produtos que proporcionam resultados visíveis e momentos de autocuidado. Nossa missão é inspirar confiança e autoestima, realçando a beleza interior de cada mulher. Com ingredientes refinados e um toque de sofisticação europeia, oferecemos não apenas produtos, mas uma experiência transformadora.</p>
+    </section>
+
+    <section id="ÁreasdeAtuação">
+        <h1>Áreas de Atuação</h1>
+        <p>Perfumes e Fragrâncias
+            Criamos fragrâncias exclusivas que despertam emoções e refletem o estilo de vida moderno da mulher Belleza Serenza. Nossos perfumes são elaborados com as melhores essências, proporcionando uma experiência olfativa única e inesquecível.</p>
+    </section>
+
+
+    <section id="Contato">
+        <h1>Contato</h1>
+        <p>A Belleza Serenza está à disposição para ouvir você! Para dúvidas, sugestões ou compartilhar sua experiência, entre em contato conosco:
+
+            E-mail6: contato@bellezaserenza.com.br  
+            Telefone: +55 (11) 98765-4321  
+            Atendimento: Segunda a sexta, das 9h às 18h
+            
+            Redes sociais:  
+            Instagram: @bellezaserenza  
+            Facebook: Belleza Serenza  
+            Pinterest: Belleza Serenza</p>
+    </section>
+
+    <section id="TrabalheConosco">
+        <h1>Trabalhe Conosco</h1>
+        <p>Na Belleza Serenza, acreditamos que a excelência começa com as pessoas. Buscamos talentos apaixonados, criativos e dedicados, que compartilhem nossa missão de celebrar a beleza feminina com sofisticação e cuidado. Se você é proativo(a) e se identifica com nossos valores, queremos conhecê-lo(a)!</p>
+            <p>
+                Vagas Abertas:
+                Assistente de Marketing Digital
+                Consultor(a) de Imagem e Estilo
+                Analista de Produtos Cosméticos
+                Designer Gráfico
+                Consultor(a) de Vendas e Atendimento ao Cliente
+                </p>
+            <p>Procuramos pessoas apaixonadas pela beleza, sofisticação e bem-estar, dispostas a crescer conosco. Se você quer contribuir para uma marca que transforma vidas, junte-se a nós! 🌟
+                </p>
+    </section>
+
+
+
 </body>
+
 </html>
